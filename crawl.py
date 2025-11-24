@@ -1,14 +1,12 @@
+# import sys
 
-
-import sys
-
-'''
+"""
 
 The sys module is how you can interact with certain objects
-which the Python interpreter itself has access to, 
+which the Python interpreter itself has access to,
 particularly things like command-line arguments,
 stdin, stdout, and stderr, modules,
-and information about the runtime environment, 
+and information about the runtime environment,
 like the operating system and Python version.
 It can also be used for debugging.
 
@@ -16,17 +14,17 @@ In this program, we are just using it
 to grab any command-line arguments the user might pass.
 But in the beginning, we may not even need that.
 
-'''
+"""
 
-'''
+"""
 
 We should think about some of the very basics of what a crawler might do, 
 to establish a basic functionality before enhancing usability,
 customizable features, etc.
 
-'''
+"""
 
-'''
+"""
 
 Of course, "crawling" is a metaphor. 
 We often talk about the internet / web as if we are *going* somewhere - 
@@ -52,5 +50,43 @@ except for the code is sent over the internet at the last minute,
 your computer receives it and runs it.
 
 
-'''
+"""
 
+"""
+
+That means that "crawling" is more like looking inside any given webpage for URLs
+it has, and then also requesting their page source.
+
+That means that a very basic crawler should:
+
+- Know where to begin from (i.e., at least one URL to request first)
+- Be able to parse or extract URLs from the source code of pages it receives
+
+In addition, we usually crawl for a purpose, like, we are looking
+for certain kinds of information, or we want to start an index,
+like a catalog, about the web, or we are basically ingesting
+lots of data we want to save.
+
+Sometimes you might do some kind of targeted crawling,
+seeking something very specific.
+
+A lot of the time, crawling is more like "trawling":
+you are scraping up a ton of data on the internet
+and saving it somewhere so that later, when you
+have a question about something (like, which webpages exist
+matching a certain description, which is what search engines do),
+you already have tons of data about the web efficiently collocated. 
+This can also be called "broad crawling".
+
+It's arguably sort of a "space-time tradeoff" - you might not be sure
+if a targeted crawler can efficiently find something you are looking for
+in the moment you decide you want it. Broad crawling is inefficient, in 
+a different way: you are saving a massive pile of data in storage,
+perhaps much of the time not knowing what you might need it for,
+or what's even in it.
+
+It's sort of like the preemptive approach vs. the intentional approach, or something.
+
+
+
+"""
