@@ -87,6 +87,23 @@ or what's even in it.
 
 It's sort of like the preemptive approach vs. the intentional approach, or something.
 
+That is why two other aspects of crawling we will discuss, in a bit, are:
 
+- what we actually do with the page source: are we trying to extract interesting data from it?
+Are we trying to save that data in an organized and persistent database, 
+for longterm use?
+
+and
+
+- crawling strategy. The web is huge. I don't know the exact numbers off 
+the top of my head. But naturally, we are going to have to choose not only
+which links we want to visit at all, but also in what order.
+We are spelunking: we are exploring around all kinds of various paths,
+walking through this door, then that door. We don't know
+which door will take us to the best places we want to go. So
+we have to include some sort of algorithmic logic to decide,
+of all the links we could crawl next, which ones we will.
 
 """
+
+
