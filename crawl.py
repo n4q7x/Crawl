@@ -186,8 +186,89 @@ We'll explore both of these approaches, starting with the latter, and falling
 back on some cherry-picked URLs like Wikipedia if that doesn't work out.
 
 
+"""
+
+
+"""
+ENUMERATING URLS
+
+Python comes with built-in tools that make enumerating well-formed strings easy.
+
+We are not going to enumerate every single possible URL for now,
+since it would be a very large search space.
+
+We might instead later build a tool that is a bit smarter in
+choosing which URLs to try to enumerate.
+
+
+"""
 
 
 
+"""
+By the RFC 1123 spec, a domain name comprises:
 
+- letters (a-z - case insensitive)
+- numbers (digits 0-9)
+- the hyphen symbol "-"
+
+A url cannot start or end with a hyphen.
+
+We will only enumerate the domains of length 4,
+and only use URLs of the form
+"https://[domain].com".
+
+
+"""
+
+"""
+
+We can construct such well-formed strings using
+recursive functions.
+
+First, we import the character sets we want to use:
+
+"""
+import string
+import itertools
+
+def enumerate_valid_strings(length=4):
+    """
+    Generate all valid strings where:
+    - First and last char: letter or digit (a-z, 0-9)
+    - Middle chars: letter, digit, or hyphen (a-z, 0-9, -)
+    """
+    edge_chars = string.ascii_lowercase + string.digits  # a-z, 0-9
+    middle_chars = edge_chars + '-'  # a-z, 0-9, hyphen
+    
+    if length == 1:
+        for c in edge_chars:
+            yield c
+    elif length == 2:
+        for first in edge_chars:
+            for last in edge_chars:
+                yield first + last
+    else:
+        # General case: first + middle chars + last
+        for first in edge_chars:
+            for middle in itertools.product(middle_chars, repeat=length-2):
+                for last in edge_chars:
+                    yield first + ''.join(middle) + last
+
+# Test it
+count = 0
+for s in enumerate_valid_strings(length=4):
+    print(s)
+    count += 1
+    if count >= 20:  # Just show first 20
+        break
+
+print(f"\nTotal possible 4-char strings: {(36 * 37**2 * 36):,}")
+
+
+
+"""
+
+
+work in progress, to be conitneuds
 """
