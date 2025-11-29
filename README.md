@@ -7,10 +7,4 @@ Begin the tutorial by reading the comments in `crawl.py`.
 
 [1]: https://en.wikipedia.org/wiki/Web_crawler
 [2]: https://www.cloudflare.com/learning/bots/what-is-a-web-crawler/
-[3]: https://docs.python.org/3.14/
-
-
-
-To continue this tutorial, start reading the comments in the `crawl.py` file.
-
-
+[3]: https://docs.python.org/3.14
