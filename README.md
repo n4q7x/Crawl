@@ -1,14 +1,13 @@
-This is a simple, straightforward, single-file web crawler written in Python 3.14. It is intended to be used as a command line utility. It does not import any modules except for those which as far as I know are unavoidable, like using `sys` to grab command-line arguments.
+This is a tutorial about web crawling. [1] [2]
 
-This README will serve as exposition and a kind of tutorial for how this code was written.
+It is written in Python 3.14.0. [3]
 
-We will use a `pyproject.toml` file to specify that this project requires Python version 3.14.
-
-We will write the code in a `crawl.py` file.
-
-I am developing this in VS Code. Assuming a completely fresh installation of VS Code with no settings configured yet, first, sign into your GitHub in VS Code, and make sure you have the standard VS Code Python extension installed. Also install the extension Ruff (a Python linter).
+Begin the tutorial by reading the comments in `crawl.py`.
 
 
+[1]: https://en.wikipedia.org/wiki/Web_crawler
+[2]: https://www.cloudflare.com/learning/bots/what-is-a-web-crawler/
+[3]: https://docs.python.org/3.14/
 
 
 
