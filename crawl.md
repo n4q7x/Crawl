@@ -46,7 +46,39 @@ The second reason we talk about web crawing but not internet crawling is that th
 
 It is where people publish public information: company websites, social media platforms, personal webpages and blogs, etc.
 
-Hence, the web is also the protocol that can give us the largest and widest amount of useful information, compared to any other Internet protocols.
+Hence, the web is also the protocol that can give us the largest and widest amount of useful information, compared to any other internet protocols.
+
+Your computer requests a webpage by transmitting a *packet* over the internet.
+
+Let's talk about how that works.
+
+# The Internet
+
+The internet is surprisingly similar to the postal system.
+
+In order to be connected to the internet, you need an *address* where things will be sent to.
+
+This is called your *IP address*.
+
+IP stands for "internet protocol".
+
+The internet is a network of networks.
+
+You do not go to some international organization or government to get an IP address for your computer.
+
+Instead, it is given to you by however you are connecting to the internet.
+
+If you are connecting to your home WiFi, your WiFi router gave you an IP address when you connected.
+
+Meanwhile, your WiFi router has an IP address of its own. It got it from whatever it is connected to, upstream from it.
+
+This is probably managed by your *internet service provider* - a company that delivers internet to your home (Google Fiber, Comcast, etc.).
+
+Those companies have data centers where internet traffic is coming in from different parts of the country, and world.
+
+Similarly, they have IP addresses.
+
+At the top level, there is an organization, called IANA, which is responsible for choosing which countries and internet companies get which IP addresses.
 
 
 """
