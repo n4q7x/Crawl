@@ -18,9 +18,13 @@ It sends a request to a server, and the server sends back a response containing 
 
 Your computer then runs that code, creating the graphical, interactive interface of a webpage that you see in your browser.
 
+The most general thing we can say the internet is used for is exchanging data.
 
+There are many different protocols that run on the TCP/IP stack, such as SSH, FTP, WebSockets, and so on.
 
+We can use these protocols to request data, and we frequently do.
 
+I will suggest there are two reasons why we talk about web crawling, but not Internet crawling. The first is that it was an intentional part of the design of the web that the data is linked. This is the now household concept of a hyperlink, the data of the web is recursivewhen we request a webpage   when we request a webpage we not only receive the payload of the data. It contains such as tax or images. but we also receive new pointers or links to new parcels of data i.e. more webpages so unlike requesting a single file over FTP where it's simply one piece of data and we're done when we request a webpage. It often gives us more webpages that we could request after thatso the web is inherently conducive   so the web is inherently conducive to gathering lots of information. because in a way it is like self indexing data. The second reason is that the web is the most widely used pro protocol. It is where people publish public information, companies, websites, social media platforms, personal webpages and blogs, etc. Hence the web is also the protocol that can give us the largest and widest amount of useful information compared to any other Internet protocols.
 
 
 """
