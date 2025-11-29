@@ -1,5 +1,7 @@
 # %% [markdown]
 # There is a difference between the internet and the web.
+# The internet is the system of connected computers that runs on the TCP/IP protocol stack.
+# It was developed in the 1960s-1980s by the US Department of Defense. [^1]
 
 
 
@@ -280,3 +282,7 @@ print(f"\nTotal possible 4-char strings: {(36 * 37**2 * 36):,}")
 
 work in progress, to be conitneuds
 """
+
+
+
+[^1]: https://en.wikipedia.org/wiki/ARPANET
